@@ -1,0 +1,21 @@
+{% extends 'flatpages/default.html' %}
+
+{%block title%} Home! {%endblock title%}
+
+{%block content%}
+<i>{{ flatpage.title}}</i>
+<hr>
+<i>{{ flatpage.content }}</i>
+<br>
+<i>
+   <h1>Страница HOME</h1>
+</i>
+<i>
+   <p>Отсюдя для удобства, есть ссылка на ADMIN страницу</p>
+</i>
+<br>
+<a href="/admin"><button id="btn-admin" style="
+   font-size: 25px;
+   background-color: aliceblue;
+">ADMIN</button></a>
+{%endblock content%}
