@@ -1,6 +1,12 @@
 {% extends 'flatpages/default.html' %}
 
+{%load static%}
+
 {%block title%} Home! {%endblock title%}
+
+{%block css%}
+<link href="{%static 'css/stylehome.css'%}" rel="stylesheet" />
+{%endblock css%}
 
 {%block content%}
 <i>{{ flatpage.title}}</i>
@@ -11,7 +17,7 @@
    <h1>Страница HOME</h1>
 </i>
 <i>
-   <p>Отсюдя для удобства, есть ссылка на ADMIN страницу</p>
+   <p class="paragraf">Отсюдя для удобства, есть ссылка на ADMIN страницу</p>
 </i>
 <br>
 <a href="/admin"><button id="btn-admin" style="
